@@ -2,3 +2,4 @@ theme = "onedark"
 
 [editor]
 line-number = "relative"
+bufferline="always"
