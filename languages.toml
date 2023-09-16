@@ -6,7 +6,7 @@
 
  [[language]]
  name = "tsx"
- language-servers = [ "typescript-language-server", "tailwindcss-react", "eslint"]
+ language-servers = [ "typescript-language-server", "tailwindcss-react", "eslint", "emmet-language-server"]
  formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
  auto-format = true
 
@@ -42,7 +42,7 @@
  [[language]]
  name = "html"
  formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
- language-servers = [ "vscode-html-language-server", "tailwindcss-react"]
+ language-servers = [ "vscode-html-language-server", "tailwindcss-react","emmet-language-server"]
  
  [[language]]
  name = "css"
@@ -69,10 +69,10 @@
  problems = { shortenToSingleLine = false }
  workingDirectory = { mode = "auto" }
 
- [language-server.tailwindcss-vue]
- command = "tailwindcss-language-server"
+ [language-server.emmet-language-server]
+ command="emmet-language-server"
  args = ["--stdio"]
- config = {}
+
 
  [language-server.tailwindcss-react]
  language-id = "typescriptreact"
