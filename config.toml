@@ -3,3 +3,10 @@ theme = "onedark"
 [editor]
 line-number = "relative"
 bufferline="always"
+
+
+[keys.normal]
+C-h = "select_prev_sibling"
+C-j = "shrink_selection"
+C-k = "expand_selection"
+C-l = "select_next_sibling"
